@@ -22,25 +22,28 @@
 </head>
 <body>
   <!--Begin Navbar -->
-  
+  <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper blue accent-2">
-      <a href="#" class="brand-logo">Josh Silverman</a>
+      <a href="#" class="brand-logo"><i class="fab fa-connectdevelop"></i> Josh Silverman - Full Stack Web Developer</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
         <ul class="side-nav" id="mobile-demo">
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
+</div>
   <br><br>
 <!--Begin Slideshow Greeting -->
 
@@ -49,7 +52,7 @@
       <li>
         <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
         <div class="caption center-align">
-          <h3>Creating visually appealing sites and apps that function correctly.</h3>
+          <h3>Creating visually appealing sites and apps that look great and function correctly.</h3>
           <h5 class="light grey-text text-lighten-3">Bringing well-written code to life is what I do best.</h5>
         </div>
       </li>
@@ -57,7 +60,7 @@
         <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
         <div class="caption left-align">
           <h3>Responsive Design Across Devices</h3>
-          <h5 class="light grey-text text-lighten-3">Your application will look fantastic and perform flawlessly whether using a desktop, laptop, tablet, or phone.</h5>
+          <h5 class="light grey-text text-lighten-3">Your application will perform flawlessly whether using a desktop, laptop, tablet, or phone.</h5>
         </div>
       </li>
       <li>
@@ -79,7 +82,7 @@
   <!-- Begin About Me Section -->
   <div class="container">
   <div class="row">
-    <div class="col s12 center-align" id="about">
+    <div class="col s12 center-align section scrollspy" id="about">
       <h3>Hi! I'm Josh and I'm a Bay Area Full-Stack Web Developer.</h3>
       <h5>A little bit about me:</h5>
       <p>My first computer was a Commodore 64 back when floppy disks were still a "thing." That was all I needed to get hooked on computers. I've remained a tech junkie ever since. </p>
@@ -131,7 +134,7 @@
     <!-- Begin Skills Section -->
     <div class="row">
       <div class="col s12 center-align">
-        <h3>My Specialities</h3>
+        <h3 id="skills" class="section scrollspy">My Specialities</h3>
         <div class="skills">
         <!--HTML -->
         <i class="devicon-html5-plain-wordmark colored"></i>
@@ -188,7 +191,7 @@
       </div>
       <div class="card-stacked">
         <div class="card-content white-text">
-          <h3 id="resume">View My Resume.</h3>
+          <h3 id="resume" class="section scrollspy">View My Resume.</h3>
         </div>
         <div class="card-action">
           <a href="https://docs.google.com/document/d/1HLgegF-zDEVgOImTYO44XA59AUTJYkfzHjLNNigS1hg/edit#heading=h.y1p534faemd3" target="_blank">Resume</a>
@@ -199,8 +202,8 @@
   <br><br>
 <!--Begin Portfolio presentation area -->
 
-<div class="row col s12 center-align">
-  <h3>My Work</h3>
+<div class="row col s12 center-align section">
+  <h3 id="portfolio" class="section scrollspy">My Work</h3>
 </div>
 <div class="row">
   <div class="col s12 m6">
@@ -349,16 +352,31 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Let's get in touch!</h5>
-                <p class="grey-text text-lighten-4">Ready to start you next project with me? That's great! Give me a call, or send me an email and I will get back to you as soon as possible!</p>
+                <h5 class="white-text section scrollspy" id="contact">Let's get in touch.</h5>
+                <p class="grey-text text-lighten-4">Ready to start you next project with me? That's great! Give me a call, or send me an email and I will get back to you as soon as possible!<br><br>
+                
+                <i class="fas fa-phone fa-3x"></i><p>650-444-3120</p><br>
+                <i class="fas fa-envelope fa-3x"></i><p>jrsilverman71@hotmail.com</p><br>
+            
+                
               </div>
               <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
+                <h5 class="white-text">Connect with me.</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://twitter.com/norcaljosh" target="_blank"><span class="fa-stack fa-3x">
+                  <i class="fab fa-twitter"></i>
+                </span>
+              </a></li>
+
+                  <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/joshua-silverman-80098912" target="_blank"><span class="fa-stack fa-3x">
+                  <i class="fab fa-linkedin-in"></i>
+                </span>
+              </a></li>
+
+                   <li><a class="grey-text text-lighten-3" href="https://github.com/josh432" target="_blank"><span class="fa-stack fa-3x">
+                  <i class="fab fa-github"></i>
+                </span>
+              </a></li>
                 </ul>
               </div>
             </div>
@@ -366,7 +384,7 @@
           <div class="footer-copyright">
             <div class="container">
             © 2018 Joshua Silverman
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            <a class="grey-text text-lighten-4 right" href="http://www.visittelluride.com/" target="_blank">My favorite place on Earth.</a>
             </div>
           </div>
         </footer>
@@ -381,6 +399,7 @@
    $(document).ready(function(){
       $('.slider').slider();
       $(".button-collapse").sideNav();
+      $(".scrollspy").scrollSpy({scrollOffset: 0});
     });
 
 
